@@ -10,6 +10,8 @@
 
 }
 
+
+
 html {
     box-sizing: border-box;
     font-size: 62.5%;
@@ -254,6 +256,9 @@ h3 {
 
 }
 
+/* formularios*/
+
+
 .formulario {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -290,3 +295,4 @@ h3 {
     cursor: pointer;
     background-color: var(--secundarioOscuro);
 }
+
