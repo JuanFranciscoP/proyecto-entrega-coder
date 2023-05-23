@@ -11,7 +11,6 @@
 }
 
 
-
 html {
     box-sizing: border-box;
     font-size: 62.5%;
@@ -81,24 +80,38 @@ h3 {
 
 .header__logo {
     margin: 3rem 0;
-    height: 30rem;
+    height: 25rem;
 }
 
 /* Footer */
 
 .footer {
     background-color: var(--primarioOscuro);
-    padding: 4rem 2rem;
+    padding: 2rem 2rem;
     margin-top: 2rem;
-    display: flex;
-    justify-content: space-between;
+    display: block;
+    text-align: center;
 }
 
+ul .navegacion__link{
+    font-size: 2rem;
+}
+
+
+ul {
+    list-style-type: none;
+}
+
+.footer__texto {
+    margin: auto;
+    text-align: center;
+}
 .social {
-    margin: auto 0;
+    margin: auto;
     width:20rem;
     text-align: center;
 }
+
 .social__logo {
     display: flex;
     justify-content: space-around;
@@ -125,28 +138,42 @@ h3 {
 .navegacion__link {
     color: var(--blanco);
     font-family: var(--fuentePrincipal);
-    font-size: 3rem;
-
+    font-size: 4rem;
 }
 
-.navegacion__link--activo,
 .navegacion__link:hover {
+        color: var(--secundario);
+        animation: agrandar 1s;
+        animation-fill-mode: forwards;
+}
+.navegacion__link--activo{
     color: var(--secundario);
 }
 
 /* productos */
 
+
 .producto {
     background-color: var(--primarioOscuro);
     padding: 1rem;
     border-radius: 1rem;
+    box-shadow: -.5rem .5rem 1rem .5rem rgba(0, 0, 0, 0.2);
 }
 
+@keyframes agrandar {
+    0% {
+    transform: scale(1);
+    }
+    100% {
+    transform: scale(1.2);
+    }
+}
 .producto:hover{
     background-color: #b07d62;
     transition: background-color 1s;
+    animation: agrandar 1s;
+    animation-fill-mode: forwards;
 }
-
 .producto__imagen {
     width: 100%;
     border-radius: 1rem;
@@ -157,7 +184,7 @@ h3 {
 }
 
 .producto__nombre {
-    font-size: 4rem;
+    font-size: 3rem;
 }
 
 .producto__precio {
@@ -226,17 +253,20 @@ h3 {
 
 /*seccion bloques*/
 
-.contenedor__comprar {}
 
 .bloques {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 2rem;
+    margin: 10rem auto;
 }
 
-
+.bloque__imagen {
+    width: 50%;
+}
 
 .bloque {
+    margin: 1rem;
     text-align: center;
     background-color: var(--primarioOscuro);
     border-radius: 1rem;
@@ -294,11 +324,15 @@ h3 {
 
 .carousel-size {
     margin: 2rem auto;
-    width: 40rem;
+    width: 40rem;    
 }
-.flex-carousel {
-    display: flex;
+
+
+.carousel-item .producto {
+    box-shadow: none;
+    animation: none;
 }
+
 
 .line{
     width: 100%;
@@ -337,5 +371,21 @@ h3 {
         gap: 2rem;
     }
     
+    .footer {
+        background-color: var(--primarioOscuro);
+        padding: 4rem 2rem;
+        margin-top: 2rem;
+        display: flex;
+        justify-content: space-between;
+    }
+    .social {
+        margin: auto 0; 
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
 
 }
