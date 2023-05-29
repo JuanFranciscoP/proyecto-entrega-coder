@@ -5,6 +5,7 @@
     --secundario: #723d46;
     --blanco: #FFF;
     --negro: #000;
+    --gris: #a39393;
 
     --fuentePrincipal: 'Staatliches', cursive;
 
@@ -28,12 +29,12 @@ body {
     background-color: var(--primario);
     font-size: 1.6rem;
     line-height: 1.5;
+    color: var(--gris)
 }
 
 p {
     font-size: 1.8rem;
     font-family: Arial, Helvetica, sans-serif;
-    color: var(--blanco);
 
 }
 
@@ -241,6 +242,15 @@ svg {
 
 .boton {
     background-color: var(--primarioOscuro);
+    padding: 1.5rem;
+    font-family: var(--fuentePrincipal);
+    color: var(--secundario);
+}
+
+.boton:hover {
+    background-color: var(--secundario);
+    color: var(--primario);
+    transition: 1s ease;
 }
 
 /* productos */
@@ -315,15 +325,17 @@ svg {
 }
 
 .bloque {
+    color: var(--blanco);
     margin: 1rem;
     text-align: center;
     background-color: var(--primarioOscuro);
     border-radius: 1rem;
 }
 
-.bloque__titulo {
-    margin: 0;
+.bloque__titulo{
+    margin: 0; 
 }
+
 
 .camisa {
     padding: 2rem;
@@ -332,6 +344,10 @@ svg {
 
 
 /* formularios*/
+.contact-form {
+
+    
+}
 
 
 .formulario {
