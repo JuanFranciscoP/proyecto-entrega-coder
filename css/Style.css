@@ -77,10 +77,14 @@ h3 {
     display: flex;
     justify-content: center;
 }
+.linea-vertical {
+    display: inline;
+    border-left: 1px solid rgb(66, 64, 64);
+    padding: 1rem;
+}
 
 .header__logo {
-    margin: 3rem 0;
-    height: 25rem;
+    display: none;
 }
 
 /* Footer */
@@ -93,7 +97,7 @@ h3 {
     text-align: center;
 }
 
-ul .navegacion__link{
+ul .navegacion__link {
     font-size: 2rem;
 }
 
@@ -106,9 +110,10 @@ ul {
     margin: auto;
     text-align: center;
 }
+
 .social {
     margin: auto;
-    width:20rem;
+    width: 20rem;
     text-align: center;
 }
 
@@ -117,87 +122,119 @@ ul {
     justify-content: space-around;
     width: 100%;
 }
+
 .social__logo img {
     height: 4rem;
     width: 4rem;
 }
 
-
-
-
-/*navegacion*/
-
-.navegacion {
-    background-color: var(--primarioOscuro);
-    display: flex;
-    justify-content: center;
-    padding: 1rem 0;
-    gap: 2rem;
-}
-
-.navegacion__link {
-    color: var(--blanco);
-    font-family: var(--fuentePrincipal);
-    font-size: 4rem;
-}
-
-.navegacion__link:hover {
-        color: var(--secundario);
-        animation: agrandar 1s;
-        animation-fill-mode: forwards;
-}
-.navegacion__link--activo{
-    color: var(--secundario);
-}
-
-/* productos */
-
-
-.producto {
-    background-color: var(--primarioOscuro);
-    padding: 1rem;
-    border-radius: 1rem;
-    box-shadow: -.5rem .5rem 1rem .5rem rgba(0, 0, 0, 0.2);
-}
+/* card */
 
 @keyframes agrandar {
     0% {
     transform: scale(1);
     }
     100% {
-    transform: scale(1.2);
+    transform: scale(1.8);
     }
 }
-.producto:hover{
-    background-color: #b07d62;
-    transition: background-color 1s;
+
+.card {
+    display: grid;
+    padding: .8em;
+    background: var(--primarioOscuro);
+    margin: .5rem;
+}
+
+.card-img {
+    background-color: var(--primario);
+    height: 40%;
+    width: 100%;
+    border-radius: .5rem;
+    transition: .3s ease;
+}
+
+.card-info {
+    padding-top: 10%;
+}
+
+svg {
+    width: 30px;
+    height: 30px;
+}
+
+.card-footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    border-top: 1px solid #ddd;
+}
+
+/*Text*/
+.text-title {
+    font-weight: 900;
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+.text-body {
+    font-size: .9em;
+    padding-bottom: 10px;
+}
+
+/*Button*/
+.card-button {
+    border: 1px solid #252525;
+    display: flex;
+    padding: .3em;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+/*Hover*/
+.card-img:hover {
+    transform: translateY(-25%);
+    box-shadow: rgba(226, 196, 63, 0.25) 0px 13px 47px -5px, rgba(180, 71, 71, 0.3) 0px 8px 16px -8px;
+}
+
+.card-button:hover {
+    border: 1px solid #ffcaa6;
+    background-color: var(--secundario);
     animation: agrandar 1s;
     animation-fill-mode: forwards;
 }
-.producto__imagen {
+
+
+/*navegacion*/
+
+
+.banner img {
     width: 100%;
-    border-radius: 1rem;
+    height: 30rem;
 }
 
-.producto__info {
-    text-align: center;
+.navegacion {
+    background-color: var(--primarioOscuro);
+    padding: 1rem 0;
+    display: flex;
 }
 
-.producto__nombre {
-    font-size: 3rem;
-}
-
-.producto__precio {
-    font-size: 2.8rem;
+.navegacion a {
+    font-family: var(--fuentePrincipal);
+    font-size: 2rem;
     color: var(--secundario);
 }
 
-.producto__precio,
-.producto__nombre {
-    font-family: var(--fuentePrincipal);
-    margin: 1rem 0;
-    line-height: 1.2;
+
+.boton {
+    background-color: var(--primarioOscuro);
 }
+
+/* productos */
+
+
 
 .grid {
     display: grid;
@@ -215,15 +252,16 @@ ul {
 
 .grafico--camisas {
     grid-row: 2/3;
-    background-image: url(../frontEndStore_img/img/grafico1.jpg);
-
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: auto;
 }
 
 .grafico--node {
-    background-image: url(../frontEndStore_img/img/grafico2.jpg);
-    grid-row: 8 / 9;
-
-
+    background-size: contain;
+    background-repeat: no-repeat;
+    grid-row: 6 / 8;
+    margin: auto;
 }
 
 
@@ -238,7 +276,7 @@ ul {
     margin: 0 auto;
 }
 
-.nosotros__contenido{
+.nosotros__contenido {
     margin: 0 1rem;
 }
 
@@ -322,19 +360,14 @@ ul {
     background-color: var(--primarioOscuro);
 }
 
-.carousel-size {
-    margin: 2rem auto;
-    width: 40rem;    
+.carousel img {
+    height: 30rem;
 }
 
 
-.carousel-item .producto {
-    box-shadow: none;
-    animation: none;
-}
 
 
-.line{
+.line {
     width: 100%;
     margin: 4rem 0;
 }
@@ -344,33 +377,46 @@ ul {
 
 
 @media (min-width: 768px) {
+    .header__logo {
+        display: inline;
+        margin: 3rem 0;
+        height: 25rem;
+        width: auto;
+        
+    }
 
     .grid {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
     }
+
     .grafico--node {
-        grid-row: 5 / 6;
-        grid-column: 2 / 4;
+        grid-row: 4 / 5;
+        grid-column: 3 / 5;
     }
+
     .nosotros {
         grid-template-columns: 50% 50%;
     }
-    .nosotros__contenido{
+
+    .nosotros__contenido {
         margin: 0 1rem;
     }
+
     .nosotros__imagen {
         grid-column: 2 / 3;
     }
+
     .bloques {
         grid-template-columns: repeat(4, 1fr);
     }
+
     .camisa {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 2rem;
     }
-    
+
     .footer {
         background-color: var(--primarioOscuro);
         padding: 4rem 2rem;
@@ -378,8 +424,9 @@ ul {
         display: flex;
         justify-content: space-between;
     }
+
     .social {
-        margin: auto 0; 
+        margin: auto 0;
     }
 
     ul {
@@ -389,3 +436,4 @@ ul {
     }
 
 }
+
