@@ -1,5 +1,5 @@
 :root {
-    --primario: #CCD5AE;
+    --primario: #fff0e5;
     --primarioOscuro: #D4A373;
     --secundarioOscuro: #6b705c;
     --secundario: #723d46;
@@ -97,13 +97,17 @@ h3 {
     text-align: center;
 }
 
-ul .navegacion__link {
-    font-size: 2rem;
-}
+
 
 
 ul {
     list-style-type: none;
+}
+
+ul a{
+    font-family: var(--fuentePrincipal);
+    font-size: 2rem;
+    color: var(--secundario);
 }
 
 .footer__texto {
@@ -130,20 +134,21 @@ ul {
 
 /* card */
 
-@keyframes agrandar {
+/*@keyframes agrandar {
     0% {
     transform: scale(1);
     }
     100% {
     transform: scale(1.8);
     }
-}
+}*/
 
 .card {
     display: grid;
     padding: .8em;
     background: var(--primarioOscuro);
     margin: .5rem;
+    box-shadow: 1rem .5rem black;
 }
 
 .card-img {
@@ -192,6 +197,9 @@ svg {
     cursor: pointer;
     transition: .3s ease-in-out;
 }
+.card-button a {
+    color: var(--secundario);
+}
 
 /*Hover*/
 .card-img:hover {
@@ -204,6 +212,9 @@ svg {
     background-color: var(--secundario);
     animation: agrandar 1s;
     animation-fill-mode: forwards;
+}
+.card-button a:hover {
+    color: var(--primario);
 }
 
 
