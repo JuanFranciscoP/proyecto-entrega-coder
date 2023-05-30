@@ -149,7 +149,7 @@ ul a{
     padding: .8em;
     background: var(--primarioOscuro);
     margin: .5rem;
-    box-shadow: 1rem .5rem black;
+    box-shadow: 1rem 1rem 3rem black;
 }
 
 .card-img {
@@ -161,7 +161,7 @@ ul a{
 }
 
 .card-info {
-    padding-top: 10%;
+    padding-top: 5%;
 }
 
 svg {
@@ -220,7 +220,13 @@ svg {
 
 
 /*navegacion*/
-
+.navbar-dropdown {
+    display: flex;  
+}
+.navbar-dropdown img {
+    height: 6rem;
+    width: auto;
+}
 
 .banner img {
     width: 100%;
@@ -344,10 +350,7 @@ svg {
 
 
 /* formularios*/
-.contact-form {
 
-    
-}
 
 
 .formulario {
@@ -397,6 +400,7 @@ svg {
 .line {
     width: 100%;
     margin: 4rem 0;
+    box-shadow: 1rem 1rem 1rem black;
 }
 
 
