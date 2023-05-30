@@ -149,7 +149,7 @@ ul a{
     padding: .8em;
     background: var(--primarioOscuro);
     margin: .5rem;
-    box-shadow: 1rem 1rem 3rem black;
+    box-shadow: 1rem 1rem 3rem 2rem black;
 }
 
 .card-img {
