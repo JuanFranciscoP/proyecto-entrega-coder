@@ -172,7 +172,7 @@ svg {
 .grid .card:hover {
   -webkit-box-shadow: 1rem 0.5rem 2rem 0.5rem black;
           box-shadow: 1rem 0.5rem 2rem 0.5rem black;
-  background-image: url(./img-noise-361x370.png);
+  background-image: url(../frontEndStore_img/img/noise.png);
 }
 .grid .card:hover .card-img {
   -webkit-transform: translateY(-25%);
