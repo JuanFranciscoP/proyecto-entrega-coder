@@ -1,0 +1,443 @@
+/*reset*/
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+/*Generales*/
+body {
+  background-color: #fff0e5;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  color: #a39393;
+}
+body p {
+  font-size: 1.8rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body a {
+  text-decoration: none;
+}
+body img {
+  max-width: 100%;
+  width: 100%;
+}
+body h1,
+body h2,
+body h3 {
+  text-align: center;
+  color: #723d46;
+  font-family: "Staatliches", cursive;
+}
+body h1 {
+  font-size: 4rem;
+}
+body h2 {
+  font-size: 3.2rem;
+}
+body h3 {
+  font-size: 2.4rem;
+}
+
+.carousel img {
+  height: 30rem;
+}
+
+.contenedor {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+.line {
+  width: 100%;
+  margin: 4rem 0;
+  -webkit-box-shadow: 1rem 1rem 1rem black;
+          box-shadow: 1rem 1rem 1rem black;
+}
+
+svg {
+  width: 30px;
+  height: 30px;
+}
+
+.contact-form input, .contact-form textarea {
+  font-size: 1.5rem;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.header .header__logo {
+  display: none;
+}
+
+.linea-vertical {
+  display: inline;
+  border-left: 1px solid rgb(66, 64, 64);
+  padding: 1rem;
+}
+
+/* navbar */
+.navbar-dropdown {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.navbar-dropdown img {
+  height: 8rem;
+  width: auto;
+}
+
+.carousel img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.formulario-busqueda {
+  font-size: 3rem;
+}
+
+.navegacion {
+  background-color: #D4A373;
+  padding: 1rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.navegacion a {
+  font-family: "Staatliches", cursive;
+  font-size: 2rem;
+  color: #723d46;
+}
+
+.boton {
+  border-radius: 0.5rem;
+  background-color: #D4A373;
+  padding: 1.5rem;
+  font-family: "Staatliches", cursive;
+  color: #723d46;
+  font-size: 2rem;
+}
+.boton:hover {
+  background-color: #723d46;
+  color: #fff0e5;
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+}
+
+/*grilla productos & cards*/
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+.grid .grafico {
+  min-height: 30rem;
+  grid-column: 1/3;
+  background-size: cover;
+}
+.grid .grafico--camisas {
+  grid-row: 2/3;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: auto;
+}
+.grid .grafico--node {
+  background-size: contain;
+  background-repeat: no-repeat;
+  grid-row: 6/8;
+  margin: auto;
+}
+.grid .card {
+  background-color: #D4A373;
+  display: grid;
+  padding: 0.8em;
+  margin: 1rem;
+  -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+.grid .card:hover {
+  -webkit-box-shadow: 1rem 0.5rem 2rem 0.5rem black;
+          box-shadow: 1rem 0.5rem 2rem 0.5rem black;
+  background-image: url(../../frontEndStore_img/img/img-noise-361x370.png);
+}
+.grid .card:hover .card-img {
+  -webkit-transform: translateY(-25%);
+          transform: translateY(-25%);
+  -webkit-box-shadow: rgba(226, 196, 63, 0.25) 0px 13px 47px -5px, rgba(180, 71, 71, 0.3) 0px 8px 16px -8px;
+          box-shadow: rgba(226, 196, 63, 0.25) 0px 13px 47px -5px, rgba(180, 71, 71, 0.3) 0px 8px 16px -8px;
+}
+.grid .card .card-img {
+  background-color: #fff0e5;
+  border-radius: 0.5rem;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+.grid .card .card-info {
+  padding-top: 5%;
+}
+.grid .card .card-info .text-title {
+  font-weight: 900;
+  font-size: 1.2em;
+  line-height: 1.5;
+}
+.grid .card .card-info .text-body {
+  font-size: 1.5rem;
+  padding-bottom: 10px;
+}
+.grid .card .card-footer {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 10px;
+  border-top: 1px solid #ddd;
+}
+.grid .card .card-footer .card-button {
+  border: 1px solid #252525;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0.3em;
+  cursor: pointer;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+.grid .card .card-footer .card-button a {
+  color: #723d46;
+}
+.grid .card .card-footer .card-button a:hover {
+  color: #fff0e5;
+}
+.grid .card .card-footer .card-button:hover {
+  border: 1px solid #ffcaa6;
+  background-color: #723d46;
+  -webkit-animation: agrandar 1s;
+          animation: agrandar 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+/*sobre nosotros*/
+.nosotros {
+  display: grid;
+  grid-template-rows: repeat(2, auto);
+  gap: 2rem;
+  margin: 0 auto;
+}
+
+.nosotros__contenido {
+  margin: 0 1rem;
+}
+
+.nosotros__contenido p {
+  color: var(--gris);
+}
+
+.nosotros__imagen {
+  grid-row: 1/2;
+  width: 100%;
+  margin: auto 2rem;
+}
+
+/*seccion bloques*/
+.bloques {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  -webkit-column-gap: 2rem;
+     -moz-column-gap: 2rem;
+          column-gap: 2rem;
+  margin: 10rem auto;
+}
+
+.bloque__imagen {
+  width: 50%;
+}
+
+.bloque {
+  padding: 1rem;
+  margin: 1rem;
+  text-align: center;
+  background-color: #D4A373;
+  border-radius: 1rem;
+  -webkit-box-shadow: rgba(226, 196, 63, 0.25) 0px 13px 47px -5px, rgba(180, 71, 71, 0.3) 0px 8px 16px -8px;
+          box-shadow: rgba(226, 196, 63, 0.25) 0px 13px 47px -5px, rgba(180, 71, 71, 0.3) 0px 8px 16px -8px;
+}
+.bloque:hover {
+  -webkit-box-shadow: 1rem 0.5rem 2rem 0.5rem black;
+          box-shadow: 1rem 0.5rem 2rem 0.5rem black;
+  background-image: url(../../frontEndStore_img/img/img-noise-361x370.png);
+}
+.bloque p {
+  color: #FFF;
+}
+.bloque .bloque__titulo {
+  margin: 0;
+}
+
+.camisa {
+  padding: 2rem;
+}
+.camisa p {
+  color: #a39393;
+}
+.camisa img {
+  width: 80%;
+}
+
+/*formularios*/
+.formulario {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+.formulario .formulario__campo {
+  border-color: #D4A373;
+  border-width: 1rem;
+  border-style: solid;
+  background-color: #fff0e5;
+  color: #000;
+  font-size: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 1rem;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 100%;
+}
+.formulario .formulario__submit {
+  background-color: #D4A373;
+  border: none;
+  font-size: 2rem;
+  font-family: "Staatliches", cursive;
+  padding: 2rem;
+  -webkit-transition: background-color ease 1s;
+  transition: background-color ease 1s;
+  grid-column: 1/3;
+  text-align: center;
+  color: #723d46;
+}
+.formulario .formulario__submit:hover {
+  cursor: pointer;
+  background-color: #723d46;
+  color: #fff0e5;
+}
+
+/*footer*/
+.footer {
+  background-color: #D4A373;
+  padding: 2rem 2rem;
+  margin-top: 2rem;
+  display: block;
+  text-align: center;
+}
+.footer ul {
+  list-style-type: none;
+}
+.footer ul a {
+  font-family: "Staatliches", cursive;
+  font-size: 2rem;
+  color: #723d46;
+}
+.footer .footer__texto {
+  margin: auto;
+  text-align: center;
+  color: #723d46;
+}
+.footer .social {
+  margin: auto;
+  width: 20rem;
+  text-align: center;
+}
+.footer .social .social__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+}
+.footer .social .social__logo img {
+  height: 4rem;
+  width: 4rem;
+}
+.footer p {
+  color: #723d46;
+}
+
+@media (min-width: 768px) {
+  .header .header__logo {
+    display: inline;
+    margin: 3rem 0;
+    height: 25rem;
+    width: auto;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .grid .grafico--node {
+    grid-row: 4/5;
+    grid-column: 3/5;
+  }
+  .nosotros {
+    grid-template-columns: 50% 50%;
+  }
+  .nosotros .nosotros__contenido {
+    margin: 0 1rem;
+  }
+  .nosotros .nosotros__imagen {
+    grid-column: 2/3;
+  }
+  .bloques {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .camisa {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+  .footer {
+    background-color: #D4A373;
+    padding: 4rem 2rem;
+    margin-top: 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .footer .social {
+    margin: auto 0;
+  }
+  .footer ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: left;
+  }
+}

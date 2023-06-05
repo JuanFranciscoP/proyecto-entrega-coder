@@ -1,0 +1,76 @@
+/*Generales*/
+
+body {
+    background-color: $col-primario;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    color: $col-gris ;
+    p {
+        font-size: 1.8rem;
+        font-family: Arial, Helvetica, sans-serif;
+    
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    img {
+        max-width: 100%;
+        width: 100%;
+    }
+    
+
+
+
+    h1,
+    h2,
+    h3 {
+        text-align: center;
+        color: $col-secundario;
+        font-family: $fuentePrincipal;
+    }
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    h2 {
+        font-size: 3.2rem;
+    }
+
+    h3 {
+        font-size: 2.4rem;
+    }
+
+}
+
+.carousel img {
+    height: 30rem;
+}
+
+
+.contenedor {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.line {
+    width: 100%;
+    margin: 4rem 0;
+    box-shadow: 1rem 1rem 1rem black;
+}
+
+svg {
+    width: 30px;
+    height: 30px;
+}
+
+
+.contact-form {
+    input,textarea {
+    font-size: 1.5rem;
+}
+}
+
+

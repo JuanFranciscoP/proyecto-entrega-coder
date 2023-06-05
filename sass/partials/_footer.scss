@@ -1,0 +1,45 @@
+/*footer*/
+
+.footer {
+    background-color: $col-primarioOscuro;
+    padding: 2rem 2rem;
+    margin-top: 2rem;
+    display: block;
+    text-align: center;
+    ul {
+        list-style-type: none;
+        a {
+            font-family: $fuentePrincipal;
+            font-size: 2rem;
+            color: $col-secundario;
+        }
+    }
+    .footer__texto {
+        margin: auto;
+        text-align: center;
+        color: $col-secundario;
+    }
+    
+    .social {
+        margin: auto;
+        width: 20rem;
+        text-align: center;
+        .social__logo {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            img {
+                height: 4rem;
+                width: 4rem;
+            }
+        }
+    }
+    p{
+        color: $col-secundario;
+    }
+    
+}
+
+
+
+

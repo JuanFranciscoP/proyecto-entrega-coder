@@ -1,0 +1,66 @@
+@media (min-width: 768px) {
+    
+    .header {
+        .header__logo {
+            display: inline;
+            margin: 3rem 0;
+            height: 25rem;
+            width: auto;
+        }
+
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        .grafico--node {
+            grid-row: 4 / 5;
+            grid-column: 3 / 5;
+        }
+    }
+
+    
+
+    .nosotros {
+        grid-template-columns: 50% 50%;
+        .nosotros__contenido {
+            margin: 0 1rem;
+        }
+    
+        .nosotros__imagen {
+            grid-column: 2 / 3;
+        }
+    }
+
+    
+
+    .bloques {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .camisa {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    .footer {
+        background-color: $col-primarioOscuro;
+        padding: 4rem 2rem;
+        margin-top: 2rem;
+        display: flex;
+        justify-content: space-between;
+        .social {
+            margin: auto 0;
+        }
+    
+        ul {
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+        }
+    }
+
+    
+
+}
