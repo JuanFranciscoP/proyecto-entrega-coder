@@ -14,7 +14,8 @@ html {
 
 /*Generales*/
 body {
-  background-color: #fff0e5;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fff0e5), to(#a39393));
+  background-image: linear-gradient(to bottom, #fff0e5, #a39393);
   font-size: 1.6rem;
   line-height: 1.5;
   color: #a39393;
@@ -112,6 +113,8 @@ svg {
 
 .navegacion {
   background-color: #D4A373;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(5%, #723d46), color-stop(90%, #D4A373));
+  background: linear-gradient(to top, #723d46 5%, #D4A373 90%);
   padding: 1rem 0;
   display: -webkit-box;
   display: -ms-flexbox;

@@ -21,6 +21,7 @@
 
 .navegacion {
     background-color: $col-primarioOscuro;
+    background: linear-gradient(to top, $col-secundario 5%, $col-primarioOscuro 90%);
     padding: 1rem 0;
     display: flex;
     a {

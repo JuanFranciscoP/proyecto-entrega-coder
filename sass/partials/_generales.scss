@@ -1,7 +1,8 @@
 /*Generales*/
 
 body {
-    background-color: $col-primario;
+
+    background-image: linear-gradient(to bottom, $col-primario, $col-gris);
     font-size: 1.6rem;
     line-height: 1.5;
     color: $col-gris ;
