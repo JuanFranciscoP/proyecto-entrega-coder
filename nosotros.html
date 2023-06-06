@@ -1,165 +1,197 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Sobre Nosotros</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-        <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="css/main.css">
-    </head>
-    <body>
-        <header class="header">
-            <a href="index.html">
-                <img class="header__logo" src="frontEndStore_img/img/logo-responsive.png" alt="Logotipo">
-            </a>
-        </header>
-    
-        <nav class="navbar fixed-top navegacion mb-5 p-4">
-            <div class="justify-content-start">
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-            </div>
-            <div class="justify-content-end">
-                <a class="navbar-brand" href="./index.html">Tienda</a>
-                <a class="navbar-brand" href="./nosotros.html">Nosotros</a>
-                <a class="navbar-brand" href="./contacto.html">Contacto</a>
-                <div class="linea-vertical">
-                </div>
-                <a class="navbar-brand" href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                        fill="currentColor" class="bi bi-cart4" viewBox="0 0 16 16">
-                        <path
-                            d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z" />
-                    </svg></a>
-                    <a class="navbar-brand" href="#"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g id="User / User_03"> <path id="Vector" d="M18 19C18 16.7909 15.3137 15 12 15C8.68629 15 6 16.7909 6 19M12 12C9.79086 12 8 10.2091 8 8C8 5.79086 9.79086 4 12 4C14.2091 4 16 5.79086 16 8C16 10.2091 14.2091 12 12 12Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g> </g></svg></a>
-            </div>
-            <div class="offcanvas offcanvas-start text-bg-light" tabindex="-1" id="offcanvasDarkNavbar"
-                aria-labelledby="offcanvasDarkNavbarLabel">
-                <div class="offcanvas-header navbar-dropdown">
-                    <img src="./frontEndStore_img/img/logoNavbar.png" alt="logo Empresa">
-                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
-                        aria-label="Close"></button>
-                </div>
-                <hr class="line">
-                <div class="offcanvas-body">
-                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Empresa</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Mi Cuenta
-                            </a>
-                            <ul class="dropdown-menu dropdown-menu-light">
-                                <li><a class="dropdown-item" href="#">Registrarse</a></li>
-                                <li><a class="dropdown-item" href="#">Ingresar</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Recuperar Contrasena</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <form class="d-flex mt-3 contact-form" role="search">
-                        <input class="form-control me-3" type="search" placeholder="Buscar" aria-label="Search">
-                        <button class="boton" type="submit">Buscar</button>
-                    </form>
-                </div>
-            </div>
-        </nav>
-        <main class="contenedor">
-            <h1>Sobre nosotros</h1>
-            <hr class="line">
 
-            <div class="nosotros">
-                <div class="nosotros__contenido">
-                    <p>
-                        Somos un equipo de entusiastas de la tecnología que hemos fusionado nuestras dos pasiones para ofrecerte una selección única de remeras con estampados de programación.
-                    </p>
-                    <p>
-                        Nuestro objetivo es brindarte prendas de alta calidad que te permitan expresar tu amor por el mundo de la programación de una manera original y creativa.
-                    </p>
-                    <p>
-                        Ya seas un desarrollador experimentado, un estudiante de programación o simplemente alguien apasionado por el mundo digital, encontrarás en nuestra tienda una amplia variedad de remeras que reflejarán tu estilo y personalidad. 
-                        Nos enorgullece ser parte de la comunidad de programadores y esperamos que nuestras remeras te inspiren, te hagan sonreír y te conecten con otros entusiastas de la tecnología.
-                    </p>
-                    <p>
-                        ¡Bienvenido a nuestra tienda y disfruta de la moda programática!
-                    </p>
-                    
-                    
-                </div>
-                
-                <div class="nosotros__imagen">
-                    <img src="./frontEndStore_img/img/imagen de prueba.png" alt="imagennosotros" class="">
-                </div>
+<head>
+    <title>Sobre Nosotros</title>
+    <link rel="icon" type="image/x-icon" href="./frontEndStore_img/img/logo-responsive.png">
+    <meta name="description" content="En Front End Store vas a encontrar la remera que buscabas, a un precio increible y de la mejor calidad. Remeras para los amantes de la programacion. No dejes para mañana esa remera que podes disfrutar hoy!">
+    <meta name="keywords" content="moda, remeras, ropa, programacion, sistemas, coding, clothes t-shirts, ">
+    <meta name="copyright" content="FrontEndStore S.A">
+    <meta property="og:title" content="Encontra las mejores remeras para amantes de la programacion!">
+    <meta property="og:image" content="./frontEndStore_img/img/nosotros.jpg">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_ES">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <header class="header">
+        <a href="index.html">
+            <img class="header__logo" src="frontEndStore_img/img/logo-responsive.png" alt="Logotipo">
+        </a>
+    </header>
+
+    <nav class="navbar fixed-top navegacion mb-5 p-4">
+        <div class="justify-content-start">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+        <div class="justify-content-end">
+            <a class="navbar-brand" href="./index.html">Tienda</a>
+            <a class="navbar-brand" href="./nosotros.html">Nosotros</a>
+            <a class="navbar-brand" href="./contacto.html">Contacto</a>
+            <div class="linea-vertical">
+            </div>
+            <a class="navbar-brand" href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                    fill="currentColor" class="bi bi-cart4" viewBox="0 0 16 16">
+                    <path
+                        d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z" />
+                </svg></a>
+            <a class="navbar-brand" href="#"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <g id="User / User_03">
+                            <path id="Vector"
+                                d="M18 19C18 16.7909 15.3137 15 12 15C8.68629 15 6 16.7909 6 19M12 12C9.79086 12 8 10.2091 8 8C8 5.79086 9.79086 4 12 4C14.2091 4 16 5.79086 16 8C16 10.2091 14.2091 12 12 12Z"
+                                stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </g>
+                    </g>
+                </svg></a>
+        </div>
+        <div class="offcanvas offcanvas-start text-bg-light" tabindex="-1" id="offcanvasDarkNavbar"
+            aria-labelledby="offcanvasDarkNavbarLabel">
+            <div class="offcanvas-header navbar-dropdown">
+                <img src="./frontEndStore_img/img/logoNavbar.png" alt="logo Empresa">
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
             </div>
             <hr class="line">
-        </main>
-        <section class="contenedor comprar">
-            <h2 class="comprar__titulo">Porqué comprar con nosotros?</h2>
-
-            <div class="bloques">
-                <div class="bloque">
-                    <img class="bloque__imagen" src="frontEndStore_img/img/icono_1.png" alt="porq comprar">
-                    <h3 class="bloque__titulo">El mejor precio</h3>
-                    <p>Nos esforzamos por ofrecerte no solo prendas con diseños atractivos, sino también productos duraderos y a un precio inmejorable.</p>
-                </div>
-
-                <div class="bloque">
-                    <img class="bloque__imagen" src="frontEndStore_img/img/icono_2.png" alt="porq comprar">
-                    <h3 class="bloque__titulo">Para Devs</h3>
-                    <p>
-                        Encontrarás en nuestra tienda una amplia variedad de remeras que reflejarán tu estilo y personalidad!
-                    </p>
-                </div>
-
-                <div class="bloque">
-                    <img class="bloque__imagen" src="frontEndStore_img/img/icono_3.png" alt="porq comprar">
-                    <h3 class="bloque__titulo">Envio Gratis</h3>
-                    <p>Envios Gratis a todo el pais en compras mayores a $20000!</p>
-                </div>
-
-                <div class="bloque">
-                    <img class="bloque__imagen" src="frontEndStore_img/img/icono_4.png" alt="porq comprar">
-                    <h3 class="bloque__titulo">La mejor Calidad</h3>
-                    <p>Trabajamos con los mejores proveedores y utilizamos materiales de primera calidad para garantizar la satisfacción de nuestros clientes. </p>
-                </div>
-
-            </div>
-    
-
-            
-
-        </section>
-
-        
-
-        <footer class="footer">
-            <div>
-                <ul>
-                    <li><a class="navegacion__link" href="./contacto.html">Contacto</a></li>
-                    <li><a class="navegacion__link" href="./nosotros.html">Empresa</a></li>
-                    <li><a class="navegacion__link" href="#">Locales</a></li>
-                    <li><a class="navegacion__link" href="#">Devoluciones y cambios</a></li>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Empresa</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Mi Cuenta
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-light">
+                            <li><a class="dropdown-item" href="#">Registrarse</a></li>
+                            <li><a class="dropdown-item" href="#">Ingresar</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Recuperar Contrasena</a></li>
+                        </ul>
+                    </li>
                 </ul>
+                <form class="d-flex mt-3 contact-form" role="search">
+                    <input class="form-control me-3" type="search" placeholder="Buscar" aria-label="Search">
+                    <button class="boton" type="submit">Buscar</button>
+                </form>
             </div>
-            <p class="footer__texto">Front End Store - Todos los derechos reservados</p>
-            <div class="social">
-                <p>Seguinos En Redes:</p>
-                <div class="social__logo">
-                    <a href="#"><img src="./frontEndStore_img/img/facebook.png" alt=""></a>
-                    <a href="#"><img src="./frontEndStore_img/img/instagram.png" alt=""></a>
-                </div>
+        </div>
+    </nav>
+    <main class="contenedor">
+        <h1>Sobre nosotros</h1>
+        <hr class="line">
+
+        <div class="nosotros">
+            <div class="nosotros__contenido">
+                <p>
+                    Somos un equipo de entusiastas de la tecnología que hemos fusionado nuestras dos pasiones para
+                    ofrecerte una selección única de remeras con estampados de programación.
+                </p>
+                <p>
+                    Nuestro objetivo es brindarte prendas de alta calidad que te permitan expresar tu amor por el mundo
+                    de la programación de una manera original y creativa.
+                </p>
+                <p>
+                    Ya seas un desarrollador experimentado, un estudiante de programación o simplemente alguien
+                    apasionado por el mundo digital, encontrarás en nuestra tienda una amplia variedad de remeras que
+                    reflejarán tu estilo y personalidad.
+                    Nos enorgullece ser parte de la comunidad de programadores y esperamos que nuestras remeras te
+                    inspiren, te hagan sonreír y te conecten con otros entusiastas de la tecnología.
+                </p>
+                <p>
+                    ¡Bienvenido a nuestra tienda y disfruta de la moda programática!
+                </p>
+
+
             </div>
-        </footer>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-    </body>
+
+            <div class="nosotros__imagen">
+                <img src="./frontEndStore_img/img/imagen de prueba.png" alt="imagennosotros" class="">
+            </div>
+        </div>
+        <hr class="line">
+    </main>
+    <section class="contenedor comprar">
+        <h2 class="comprar__titulo">Porqué comprar con nosotros?</h2>
+
+        <div class="bloques">
+            <div class="bloque">
+                <img class="bloque__imagen" src="frontEndStore_img/img/icono_1.png" alt="porq comprar">
+                <h3 class="bloque__titulo">El mejor precio</h3>
+                <p>Nos esforzamos por ofrecerte no solo prendas con diseños atractivos, sino también productos duraderos
+                    y a un precio inmejorable.</p>
+            </div>
+
+            <div class="bloque">
+                <img class="bloque__imagen" src="frontEndStore_img/img/icono_2.png" alt="porq comprar">
+                <h3 class="bloque__titulo">Para Devs</h3>
+                <p>
+                    Encontrarás en nuestra tienda una amplia variedad de remeras que reflejarán tu estilo y
+                    personalidad!
+                </p>
+            </div>
+
+            <div class="bloque">
+                <img class="bloque__imagen" src="frontEndStore_img/img/icono_3.png" alt="porq comprar">
+                <h3 class="bloque__titulo">Envio Gratis</h3>
+                <p>Envios Gratis a todo el pais en compras mayores a $20000!</p>
+            </div>
+
+            <div class="bloque">
+                <img class="bloque__imagen" src="frontEndStore_img/img/icono_4.png" alt="porq comprar">
+                <h3 class="bloque__titulo">La mejor Calidad</h3>
+                <p>Trabajamos con los mejores proveedores y utilizamos materiales de primera calidad para garantizar la
+                    satisfacción de nuestros clientes. </p>
+            </div>
+
+        </div>
+
+
+
+
+    </section>
+
+
+
+    <footer class="footer">
+        <div>
+            <ul>
+                <li><a href="./contacto.html">Contacto</a></li>
+                <li><a href="./nosotros.html">Empresa</a></li>
+                <li><a href="#">Locales</a></li>
+                <li><a href="#">Devoluciones y cambios</a></li>
+            </ul>
+        </div>
+        <p class="footer__texto">Front End Store - Todos los derechos reservados</p>
+        <div class="social">
+            <p>Seguinos En Redes:</p>
+            <div class="social__logo">
+                <a href="#"><img src="./frontEndStore_img/img/facebook.png" alt="logo facebook"></a>
+                <a href="#"><img src="./frontEndStore_img/img/instagram.png" alt="logo instagram"></a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+</body>
+
 </html>
