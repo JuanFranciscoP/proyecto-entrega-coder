@@ -20,14 +20,13 @@
 
 
 .navegacion {
-    background-color: $col-primarioOscuro;
-    background: linear-gradient(to top, $col-secundario 5%, $col-primarioOscuro 90%);
+    background-color: $col-secundario;
     padding: 1rem 0;
     display: flex;
     a {
         font-family: $fuentePrincipal;
         font-size: 2rem;
-        color: $col-secundario;
+        color: $col-primario;
     }
 }
 

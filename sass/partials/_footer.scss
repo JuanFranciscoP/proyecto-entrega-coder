@@ -1,7 +1,7 @@
 /*footer*/
 
 .footer {
-    background-color: $col-primarioOscuro;
+    background-color: $col-secundario;
     padding: 2rem 2rem;
     margin-top: 2rem;
     display: block;
@@ -11,13 +11,13 @@
         a {
             font-family: $fuentePrincipal;
             font-size: 2rem;
-            color: $col-secundario;
+            color: $col-primario;
         }
     }
     .footer__texto {
         margin: auto;
         text-align: center;
-        color: $col-secundario;
+        color: $col-primario;
     }
     
     .social {
@@ -35,7 +35,7 @@
         }
     }
     p{
-        color: $col-secundario;
+        color: $col-primario;
     }
     
 }

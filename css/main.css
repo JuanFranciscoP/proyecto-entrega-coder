@@ -34,7 +34,7 @@ body h1,
 body h2,
 body h3 {
   text-align: center;
-  color: #723d46;
+  color: #D4A373;
   font-family: "Staatliches", cursive;
 }
 body h1 {
@@ -111,9 +111,7 @@ svg {
 }
 
 .navegacion {
-  background-color: #D4A373;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(5%, #723d46), color-stop(90%, #D4A373));
-  background: linear-gradient(to top, #723d46 5%, #D4A373 90%);
+  background-color: #723d46;
   padding: 1rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -122,7 +120,7 @@ svg {
 .navegacion a {
   font-family: "Staatliches", cursive;
   font-size: 2rem;
-  color: #723d46;
+  color: #fff0e5;
 }
 
 .boton {
@@ -346,7 +344,7 @@ svg {
 
 /*footer*/
 .footer {
-  background-color: #D4A373;
+  background-color: #723d46;
   padding: 2rem 2rem;
   margin-top: 2rem;
   display: block;
@@ -383,7 +381,7 @@ svg {
   width: 4rem;
 }
 .footer p {
-  color: #723d46;
+  color: #fff0e5;
 }
 
 @media (min-width: 768px) {
