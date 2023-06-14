@@ -28,12 +28,13 @@ body {
     h2,
     h3 {
         text-align: center;
-        color: $col-primarioOscuro;
+        color: $col-secundario;
         font-family: $fuentePrincipal;
     }
 
     h1 {
         font-size: 4rem;
+        margin-top: 10rem;
     }
 
     h2 {
@@ -47,7 +48,8 @@ body {
 }
 
 .carousel img {
-    height: 30rem;
+    height: 15rem;
+    object-fit: fill;
 }
 
 
@@ -71,7 +73,10 @@ svg {
 .contact-form {
     input,textarea {
     font-size: 1.5rem;
-}
+    }
+    p{
+        text-align: center;
+    }
 }
 
 

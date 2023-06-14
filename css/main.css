@@ -34,11 +34,12 @@ body h1,
 body h2,
 body h3 {
   text-align: center;
-  color: #D4A373;
+  color: #723d46;
   font-family: "Staatliches", cursive;
 }
 body h1 {
   font-size: 4rem;
+  margin-top: 10rem;
 }
 body h2 {
   font-size: 3.2rem;
@@ -48,7 +49,9 @@ body h3 {
 }
 
 .carousel img {
-  height: 30rem;
+  height: 15rem;
+  -o-object-fit: fill;
+     object-fit: fill;
 }
 
 .contenedor {
@@ -70,6 +73,9 @@ svg {
 
 .contact-form input, .contact-form textarea {
   font-size: 1.5rem;
+}
+.contact-form p {
+  text-align: center;
 }
 
 .header {
@@ -101,17 +107,12 @@ svg {
   width: auto;
 }
 
-.carousel img {
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
 .formulario-busqueda {
   font-size: 3rem;
 }
 
 .navegacion {
-  background-color: #723d46;
+  background-color: #D4A373;
   padding: 1rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -120,7 +121,11 @@ svg {
 .navegacion a {
   font-family: "Staatliches", cursive;
   font-size: 2rem;
-  color: #fff0e5;
+  color: #723d46;
+}
+
+.navbar-right {
+  display: none;
 }
 
 .boton {
@@ -244,16 +249,13 @@ svg {
   gap: 2rem;
   margin: 0 auto;
 }
-
-.nosotros__contenido {
+.nosotros .nosotros__contenido {
   margin: 0 1rem;
 }
-
-.nosotros__contenido p {
+.nosotros .nosotros__contenido p {
   color: var(--gris);
 }
-
-.nosotros__imagen {
+.nosotros .nosotros__imagen {
   grid-row: 1/2;
   width: 100%;
   margin: auto 2rem;
@@ -268,12 +270,7 @@ svg {
           column-gap: 2rem;
   margin: 10rem auto;
 }
-
-.bloque__imagen {
-  width: 50%;
-}
-
-.bloque {
+.bloques .bloque {
   padding: 1rem;
   margin: 1rem;
   text-align: center;
@@ -282,16 +279,19 @@ svg {
   -webkit-box-shadow: rgba(226, 196, 63, 0.25) 0px 13px 47px -5px, rgba(180, 71, 71, 0.3) 0px 8px 16px -8px;
           box-shadow: rgba(226, 196, 63, 0.25) 0px 13px 47px -5px, rgba(180, 71, 71, 0.3) 0px 8px 16px -8px;
 }
-.bloque:hover {
+.bloques .bloque:hover {
   -webkit-box-shadow: 1rem 0.5rem 2rem 0.5rem black;
           box-shadow: 1rem 0.5rem 2rem 0.5rem black;
   background-image: url(../../frontEndStore_img/img/img-noise-361x370.png);
 }
-.bloque p {
+.bloques .bloque p {
   color: #FFF;
 }
-.bloque .bloque__titulo {
+.bloques .bloque .bloque__titulo {
   margin: 0;
+}
+.bloques .bloque .bloque__imagen {
+  width: 50%;
 }
 
 .camisa {
@@ -344,7 +344,7 @@ svg {
 
 /*footer*/
 .footer {
-  background-color: #723d46;
+  background-color: #D4A373;
   padding: 2rem 2rem;
   margin-top: 2rem;
   display: block;
@@ -356,12 +356,12 @@ svg {
 .footer ul a {
   font-family: "Staatliches", cursive;
   font-size: 2rem;
-  color: #723d46;
+  color: #fff0e5;
 }
 .footer .footer__texto {
   margin: auto;
   text-align: center;
-  color: #723d46;
+  color: #fff0e5;
 }
 .footer .social {
   margin: auto;
@@ -384,12 +384,38 @@ svg {
   color: #fff0e5;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 480px) {
+  .carousel img {
+    height: 25rem;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  h1 {
+    margin-top: 0;
+  }
+  .navbar-right {
+    display: inline;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .grid .grafico--node {
+    grid-row: 5/6;
+    grid-column: 1/3;
+  }
   .header .header__logo {
     display: inline;
     margin: 3rem 0;
     height: 25rem;
     width: auto;
+  }
+}
+@media (min-width: 960px) {
+  .carousel img {
+    height: 30rem;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .grid {
     display: grid;
@@ -417,7 +443,6 @@ svg {
     gap: 2rem;
   }
   .footer {
-    background-color: #D4A373;
     padding: 4rem 2rem;
     margin-top: 2rem;
     display: -webkit-box;
